@@ -1,0 +1,83 @@
+[
+    {
+        "question": "Create a new Git branch and switch to it",
+        "answer": "1. Use the command: `git checkout -b <branch_name>`\n2. This single command creates the new branch and switches to it."
+    },
+    {
+        "question": "Compress the folder 'reports' into 'reports.tar.gz'",
+        "answer": "1. Run the command: `tar -czvf reports.tar.gz reports/`\n2. `-c` creates an archive.\n3. `-z` filters the archive through gzip.\n4. `-v` shows the progress.\n5. `-f` specifies the filename."
+    },
+    {
+        "question": "List all Python files in the current directory recursively",
+        "answer": "1. Use the find command: `find . -type f -name \"*.py\"`\n2. `.` searches the current directory.\n3. `-type f` looks for files.\n4. `-name \"*.py\"` matches files ending with .py."
+    },
+    {
+        "question": "Set up a Python virtual environment and install the 'requests' library",
+        "answer": "1. Create a virtual environment: `python3 -m venv venv`\n2. Activate it: `source venv/bin/activate`\n3. Install the library: `pip install requests`"
+    },
+    {
+        "question": "Fetch only the first ten lines of a file named 'output.log'",
+        "answer": "1. Use the head command: `head -n 10 output.log`\n2. The `-n` flag specifies the number of lines to display."
+    },
+    {
+        "question": "How to see the commit history in Git?",
+        "answer": "1. The primary command is `git log`.\n2. For a more concise view, use `git log --oneline`.\n3. To see logs for a specific file, use `git log -- path/to/file`."
+    },
+    {
+        "question": "How do I discard all local changes in my working directory?",
+        "answer": "1. To discard changes to tracked files, use `git checkout -- .`\n2. To remove untracked files and directories, use `git clean -fd`. Be careful, this is destructive."
+    },
+    {
+        "question": "How to extract a .tar.gz file?",
+        "answer": "1. Use the command: `tar -xzvf archive.tar.gz`\n2. `-x` extracts files from an archive.\n3. `-z`, `-v`, `-f` have the same meaning as in compression."
+    },
+    {
+        "question": "Search for the string 'ERROR' in all log files.",
+        "answer": "1. Use grep: `grep 'ERROR' *.log`\n2. For a case-insensitive search, use `grep -i 'ERROR' *.log`.\n3. To search recursively in a directory, use `grep -r 'ERROR' .`"
+    },
+    {
+        "question": "How to find files modified in the last 7 days?",
+        "answer": "1. Use the find command: `find . -mtime -7`\n2. `-mtime -7` finds files modified less than 7 days ago."
+    },
+    {
+        "question": "How do I build a Docker image from a Dockerfile?",
+        "answer": "1. Navigate to the directory with your Dockerfile.\n2. Run the command: `docker build -t my-image-name .`\n3. The `-t` flag tags the image with a name."
+    },
+    {
+        "question": "How do I run a Docker container?",
+        "answer": "1. Use the run command: `docker run -d -p 8080:80 my-image-name`\n2. `-d` runs the container in detached mode.\n3. `-p` maps port 8080 on the host to port 80 in the container."
+    },
+    {
+        "question": "How to list all running Docker containers?",
+        "answer": "1. Use the command `docker ps`.\n2. To list all containers (running and stopped), use `docker ps -a`."
+    },
+    {
+        "question": "How do I create an alias for a long command in Bash?",
+        "answer": "1. Open your `.bashrc` or `.zshrc` file: `nano ~/.bashrc`\n2. Add an alias on a new line: `alias ll='ls -laF'`\n3. Save the file and reload the shell configuration: `source ~/.bashrc`"
+    },
+    {
+        "question": "How to check the disk space usage of a directory?",
+        "answer": "1. Use the `du` command: `du -sh .`\n2. `-s` provides a summary total.\n3. `-h` prints sizes in a human-readable format (e.g., 1K, 2M, 3G)."
+    },
+    {
+        "question": "How can I download a file from a URL using the command line?",
+        "answer": "1. Use `curl`: `curl -O https://example.com/file.zip`\n2. `-O` saves the file with its original name.\n3. Alternatively, use `wget`: `wget https://example.com/file.zip`"
+    },
+    {
+        "question": "How to count the number of lines, words, and characters in a file?",
+        "answer": "1. Use the `wc` command: `wc file.txt`\n2. To count only lines, use `wc -l file.txt`.\n3. To count only words, use `wc -w file.txt`."
+    },
+    {
+        "question": "How do I rename a Git branch?",
+        "answer": "1. First, checkout the branch you want to rename: `git checkout old-branch`\n2. Then, use the `-m` flag to rename it: `git branch -m new-branch`"
+    },
+    {
+        "question": "How to remove a file from the Git staging area?",
+        "answer": "1. Use the `git restore` command: `git restore --staged <file>`\n2. This unstages the file but keeps the modifications in your working directory."
+    },
+    {
+        "question": "How do I find the process ID of a running program?",
+        "answer": "1. Use `pgrep`: `pgrep -f 'program_name'`\n2. Alternatively, pipe `ps` to `grep`: `ps aux | grep 'program_name'`"
+    }
+]
+
